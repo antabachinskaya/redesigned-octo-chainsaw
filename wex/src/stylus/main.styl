@@ -1,0 +1,92 @@
+/*!
+ * WCMS - WEX Simple CMS
+ * https://github.com/vedees/wcms
+ * Copyright (C) 2018 Evgenii Vedegis <vedegis@gmail.com>
+ * https://github.com/vedees/wcms/blob/master/LICENSE
+ */
+
+
+//! Main
+// Libs
+@import './libs.styl'
+
+//! Modules
+// Navigation
+@import './modules/navigation.styl'
+// Code Editor
+@import './modules/editor.styl'
+
+//!Pages
+// Images
+@import './pages/image.styl'
+// Settings
+@import './pages/settings.styl'
+// Dashboard
+@import './pages/dashboard.styl'
+// Finder
+// @import './pages/finder.styl'
+
+// Common
+@import './common.styl'
+
+
+.title__wrapper
+  display: flex
+  justify-content: space-between
+  align-items: center
+  margin-bottom: 30px
+  .ui-title-1,.ui-title-2,.ui-title-3,.ui-title-4
+    margin-bottom 0
+
+.ui-table
+  td
+    //TODO fix uimini
+    min-height: 68px
+
+//TODO Uimini
+.navbar.navbar-fixed
+  z-index 20
+
+.ui-messageBox__wrapper
+  z-index 99
+
+.navbar.navbar-fixed
+  top 0
+
+
+.tags__wrapper
+  margin-bottom 30px
+  .ui-tag__wrapper
+    margin-right 14px
+    //TODO fix uimini
+    &:last-child
+      margin-right 0
+    .ui-tag
+      // TODO FIX
+      border-radius: 1.4em
+      cursor pointer
+      &.active
+        background-color #656bda
+        color #fff
+
+//TODO uimini
+.ui-title-1, .ui-title-2, .ui-title-3
+  font-weight 700
+.file-name
+  font-weight 500
+  p
+    font-weight 300
+  .ui-label
+	  padding: 1px 3px
+	  font-size 14px
+	  font-weight 400
+	  b
+		  font-weight 500
+.version-header
+  font-weight 300
+.sidebar-content
+  .ui-text-small
+    font-weight 300
+
+.sidebar-link
+  font-weight 400
